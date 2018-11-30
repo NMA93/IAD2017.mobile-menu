@@ -5,30 +5,33 @@ body {
 /**Font-Sizes**/
 
 html {
-    font-family: 'Fira Sans', sans-serif !important;
-    font-size: 62.5% !important;
-    font-weight: 300 !important;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 62.5%;
+    font-weight: 300;
+    color: #333333;
 }
 
 body {
-    font-size: 1.6rem !important;
+    font-size: 1.6rem;
 }
 
 h1 {
-    font-size: 4.2rem !important;
+    font-size: 10.2rem;  
+    position: static;
+    text-align: center;
 }
 
 h2 {
-    font-size: 2.2rem !important;
+    font-size: 2.2rem;
 }
 
 h6 {
-    font-size: 1.4rem !important;
+    font-size: 1.4rem;
     color: white;
 }
 
 a.footer {
-    font-size: 1.4rem !important;
+    font-size: 1.4rem;
     color: white;
 }
 
@@ -38,8 +41,12 @@ a.footer {
 width: 100vw;
 height: 45vh;
 min-height: 200px;
+padding-top: 10px;
+padding-bottom: 10px;
 background-image: linear-gradient(#43C6AC, #f8ffae);
 position: static;
+z-index: -100;
+overflow: hidden;
 }
 
 .nav_mobile {
@@ -87,6 +94,21 @@ padding-right: 20vw;
 
 /**Mediaqueries**/
 
+@media only screen and (max-width: 1000px) {
+
+    .wrapper {
+        padding-left: 10vw;
+        padding-right: 10vw;
+         }
+
+     h1 {
+            font-size: 9.0rem !important;
+        }
+
+}
+
+
+
 @media only screen and (max-width: 640px) {
    
     body {
@@ -94,7 +116,7 @@ padding-right: 20vw;
     }
 
     h1 {
-        font-size: 3.0rem !important;
+        font-size: 6.0rem !important;
     }
 
     h2 {
@@ -117,6 +139,5 @@ padding-right: 20vw;
       .wrapper {
         padding-left: 5vw;
         padding-right: 5vw;
-        
-        }
+         }
 }
