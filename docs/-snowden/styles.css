@@ -201,6 +201,13 @@ padding-right: 20vw;
     margin-top: 10px;
 }
 
+.mobile_nav_close {
+    height: 40px;
+    width: 34px;
+    right: 20px;
+    position: absolute;
+    margin-top: 10px;
+}
 
 /**Mediaqueries**/
 
@@ -275,3 +282,19 @@ padding-right: 20vw;
           }
 }
 
+/**Overlay**/
+
+.hidden {
+    display: none;
+    position: absolute;
+}
+
+#overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: red;
+    z-index: 1000;
+}
