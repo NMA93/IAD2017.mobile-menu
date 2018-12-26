@@ -139,7 +139,7 @@ padding-right: 20vw;
     display: inline-block;
     position: relative;
     color: #343434;
-    text-decoration: none;
+    text-decoration: underline;
     padding: 0 6px;
   }
   a.text:before, a.text:after {
@@ -274,3 +274,4 @@ padding-right: 20vw;
             bottom: -8px;
           }
 }
+
