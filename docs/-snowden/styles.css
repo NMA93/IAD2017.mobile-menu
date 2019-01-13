@@ -36,7 +36,7 @@ h1 {
     color: white;
     text-align: center;
     padding: 0;
-    margin: 0;
+    margin-top: 50px;
 }
 
 h2 {
@@ -62,6 +62,7 @@ h4 {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 600;
     margin-bottom: 50px;
+    font-size: 1.8rem;
 }
 
 
@@ -70,12 +71,22 @@ a.footer {
     color: white;
 }
 
+a.menu {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 2.8rem;
+    color: #333333;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+}
+
 /**Header**/
 
 .hero_container {
 width: 100vw;
-height: 45vh;
-min-height: 300px;
+height: 40vh;
+min-height: 250px;
 background-image: linear-gradient(#48c6ef, #6f86d6);
 z-index: -100;
 overflow: hidden;
@@ -83,7 +94,7 @@ position: static;
 }
 
 .nav_mobile {
-    position: static;
+    position: fixed;
     width: 100vw;
     height: 60px;
     margin-bottom: 20px;
@@ -93,32 +104,26 @@ position: static;
     }
 
 .nav_mobile_overlay {
-    position: static;
+    position: fixed;
     width: 100vw;
     height: 60px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
     z-index: 100;
-     }
-
-.nav_mobile.sticky {
-        position: fixed;
-        top: 0;
-        width:100vw;
-      }
-
-.nav_mobile_overlay.sticky {
-        position: fixed;
-        top: 0;
-        width:100vw;
-      }
+    margin-bottom: 50px;
+}
 
 /**container**/
 
 .wrapper {
-padding-left: 20vw;
-padding-right: 20vw;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
 
+.wrapper_overlay {
+    padding-left: 20vw;
+    padding-right: 20vw;
+    margin-top: 100px;
 }
 
 .wrapper_hero {
@@ -137,6 +142,11 @@ padding-right: 20vw;
 
 .spacer {
     margin-bottom: 50px;
+}
+
+.spacer_overlay {
+    margin-bottom: 70px;
+    z-index: 1200;
 }
 
 /**Links**/
@@ -231,7 +241,12 @@ padding-right: 20vw;
     .wrapper {
         padding-left: 70vw;
         padding-right: 70vw;
-         }
+    }
+
+    .wrapper_overlay {
+        padding-left: 70vw;
+        padding-right: 70vw;
+    }
 
      h1 {
             font-size: 9.0rem !important;
@@ -244,11 +259,16 @@ padding-right: 20vw;
     .wrapper {
         padding-left: 15vw;
         padding-right: 15vw;
-         }
+    }
+
+    .wrapper_overlay {
+        padding-left: 15vw;
+        padding-right: 15vw;
+    }
 
      h1 {
             font-size: 9.0rem !important;
-        }
+    }
 
 }
 
@@ -257,12 +277,12 @@ padding-right: 20vw;
 @media only screen and (max-width: 640px) {
    
     body {
-        font-size: 1.4rem !important;
+        font-size: 1.6rem !important;
     }
 
     h1 {
         font-size: 6.0rem !important;
-        margin-top: 50px;
+        margin-top: 80px;
     }
 
     h2 {
@@ -275,7 +295,7 @@ padding-right: 20vw;
     }
 
     h4 {
-        font-size: 1.4rem !important;
+        font-size: 1.8rem !important;
     }
 
 
@@ -290,7 +310,12 @@ padding-right: 20vw;
     .wrapper {
         padding-left: 5vw;
         padding-right: 5vw;
-         }
+    }
+
+    .wrapper_overlay {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
 
     a.text:after {
             bottom: -8px;
@@ -305,7 +330,8 @@ padding-right: 20vw;
 }
 
 #overlay {
-    position: absolute;
+    position: fixed;
+    overflow: hidden;
     top: 0px;
     left: 0px;
     right: 0px;
@@ -321,4 +347,10 @@ padding-right: 20vw;
     right: 20px;
     height: 400px;
     background-color: red;
+}
+
+.scroll_overlay {
+    overflow: auto;
+    height: 100vh;
+
 }
