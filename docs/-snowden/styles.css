@@ -29,9 +29,8 @@ margin-top: 0;
 
 p.sorting {
     font-weight: 600;
-    margin-bottom: 10px;
-    margin-top: 0;
     color: white;
+    font-size: 1.5rem;
     }
 
 
@@ -154,7 +153,7 @@ a.menu_active {
 }
 
 .sorting {
-    height: 30px;
+    height: 20px;
     padding: 5px;
     background-color: #6f86d6;
 }
@@ -280,7 +279,6 @@ a.text:hover {
         font-size: 1.8rem !important;
     }
 
-
     .header {
         height: 60px !important;
     }
@@ -298,10 +296,6 @@ a.text:hover {
         padding-left: 5vw;
         padding-right: 5vw;
     }
-
-    a.text:after {
-            bottom: -6px;
-          }
 }
 
 /**Overlay**/
